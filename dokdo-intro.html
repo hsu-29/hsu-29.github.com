@@ -1,0 +1,197 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b" style="color: white ; background:brown">
+			<h1>핸드드립 소개 앱</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="커피.jpeg" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">드립커피 소개</a></li>
+				<li><a href="#tools">핸드드립에 필용한 도구</a></li>
+				<li><a href="#types" data-rel="dialog">드립퍼의 종류</a></li>
+				<li><a href="#way" data-rel="dialog">드립커피 추출 방법</a></li>
+				<li><a href="#">대표적인 드립커피 영상</a></li>
+				<li><a href="#"></a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>201858102_임진완</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="a">
+		<div data-role="header" data-theme="b" style="color: white ; background:brown">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>드립커피 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="드립커피.jpg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="a" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>드립커피의 시초</h3>
+					<p>독일의 가정 주부였던 멜리타 벤츠(Melitta Bentz)가 터키 커피의 찌꺼기를 걸러내기 위해 종이를 사용하다가, 그 방법을 편리하게 개량해서 깔때기(밀리타 드리퍼)를 만들어 사용한 것이 드립 커피의 시초로 알려져 있다. 그 후 드립 기구들이 일본에 넘어와 개량된 것이 지금의 드립커피가 되었다.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>드립커피 소개</h3>
+					<p>분쇄한 커피 빈(Coffee Bean, 커피 콩)을 드립퍼에 담고 온수를 통과시켜 추출하는 커피를 말하는데 기계가 아니여도 사람이 직접 내릴 수 있는 커피 종류 중 하나이다.</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>드립커피의 특징</h3>
+					<p>프렌치 프레스와 달리 가루가 넘어가지 않는 점은 장점이지만, 에스프레소나 프렌치 프레스와는 달리 종이 필터에 의해서 유분이 거의 깔끔하게 걸러지므로 커피 특유의 향이나 맛이 덜해진다. 진한 맛을 선호하는 사람에겐 추천하지 않는다. 대신 원두의 커핑노트가 명확하게 나뉘는 편이라 가벼운 맛의 커피를 즐길 수 있다.</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>201858102_임진완</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="types" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b" style="color: white ; background:brown">
+			<h1>드립퍼의 종류</h1>
+		</div>
+		<div data-role="content" >
+			<div data-role="collapsible" data-collapsed="false">
+					<h3>하리오</h3>
+					<p>원추 모양으로 유리제품으로 유명한 일본 하리오사에서 개발한 드리퍼이다. 나선형 가이드가 드리퍼의 끝 부분까지 있어 물빠짐이 매우 빠른 것이 특징이다. 물빠짐이 빠르기 때문에 커피의 잡맛을 유발하는 타닌 등이 최소한으로 추출되어 맛이 매우 부드러운 편이다.</p>
+					<img src="하리오.jpg">
+				</div>
+				<div data-role="collapsible">
+					<h3>칼리타</h3>
+					<p>사다리꼴 모양의 드리퍼에서 바닥에 구멍을 3개를 뚫어서 만든 제품이다. 처음 커피가 보급이 되었을 때 가장 많이 쓰였던 드립퍼이지만 내리는 방법이나 추출할 때의 환경을 고려해야해서 내리기 힘든 드립퍼이지만 잘 내리면 다른 드립퍼보다도 맛이나 향이 뛰어나다.</p>
+					<img src="칼리타.jpg">
+				</div>
+				<div data-role="collapsible" >
+					<h3>칼리타 웨이브</h3>
+					<p>위의 칼리타에서 멜리타의 영향에서 벗어나고자 새로 만들어진 유형의 오리지널 드리퍼이다. 원추형의 깔때기에 밑면이 평평하고 안쪽에 가로로 많은 주름이 있으며, 전용 필터는 세로로 구불구불한 주름이 접힌 특이한 모습을 하고 있고 추출구는 3개이다.</p>
+					<img src="칼리타 웨이브 2.jpg">
+				</div>
+			</div>
+		<div data-role="footer" data-theme="b">
+			<h1>201858102_임진완</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="tools">
+		<div data-role="header" style="color: white ; background:brown">
+			<h1>핸드드립에 필요한 도구</h1>
+		</div>
+		<div data-role="content">
+			<div data-role="collapsible" data-collapsed="false">
+					<h3>그라인더(핸드밀), 드립포트</h3>
+					<p>왼쪽이 그라인더로 커피 빈을 분쇄하도록 하는 장치이다. 오른쪽은 드립포트로 물주전자라고 생각하면 편하다.</p>
+					<img src="핸드밀.jpg"><img src="드립포트.jpg">
+				</div>
+				<div data-role="collapsible">
+					<h3>드립서버</h3>
+					<p>드립서버는 커피 빈에서 추출하고 나온 커피를 받아주는 도구이다.</p>
+					<img src="드립서버.jpg">
+				</div>
+				<div data-role="collapsible" >
+					<h3>드립퍼, 드립필터</h3>
+					<p>드립퍼는 드립필터를 끼우는 곳이면서 드립커피를 어떻게 내릴 지 정해주는 도구이다. 드립필터는 드립퍼의 밑 바닥과 비슷한 보양을 지닌 필터를 의미한다.</p>
+					<img src="드립퍼.jpg">
+				</div>
+			</div>
+		<div data-role="footer" data-theme="b">
+			<h1>201858102_임진완</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="way">
+		<div data-role="header" style="color: white ; background:brown">
+			<h1>드립커피 추출 방법</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">칼리타로 추출하는 방법</div>
+			<li><iframe width="100%" height="240" src="초보자도 할 수 있는 핸드드립 커피 추출 방법.mp4"></iframe></li><br/>
+			<div class="ui-bar ui-bar-e">하리오(포오푸 방법)로 추출하는 방법</div>
+			<li><iframe width="100%" height="240" src="하리오v60 푸어오버 핸드드립 누구나 쉽게 할 수 있어요.mp4"></iframe></li><br/>
+		</div>
+		<div data-role="footer" data-theme="b">
+			<h1>201858102_임진완</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="기본적인 드립커피 추출 방법"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>독도 갤러리</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="4-1.jpg" rel="external"><img src="4-1.jpg" /></a></li>	
+				<li><a href="4-2.jpg" rel="external"><img src="4-2.jpg" /></a></li>	
+				<li><a href="4-3.jpg" rel="external"><img src="4-3.jpg" /></a></li>	
+				<li><a href="4-4.jpg" rel="external"><img src="4-4.jpg" /></a></li>	
+				<li><a href="4-5.jpg" rel="external"><img src="4-5.jpg" /></a></li>	
+				<li><a href="4-6.jpg" rel="external"><img src="4-6.jpg" /></a></li>	
+				<li><a href="4-7.jpg" rel="external"><img src="4-7.jpg" /></a></li>	
+				<li><a href="4-8.jpg" rel="external"><img src="4-8.jpg" /></a></li>	
+				<li><a href="4-9.jpg" rel="external"><img src="4-9.jpg" /></a></li>	 
+				<li><a href="4-10.jpg" rel="external"><img src="4-10.jpg" /></a></li>    
+				<li><a href="4-11.jpg" rel="external"><img src="4-11.jpg" /></a></li>   
+				<li><a href="4-12.jpg" rel="external"><img src="4-12.jpg" /></a></li>
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>독도사랑_홍길동</h1>
+		</div>		
+	</div>
+</div>
+
+	<div data-role="page" id="types" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b" style="color: white ; background:brown">
+			<h1>드립커피의 종류</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-e">외교부 독도 소개 동영상</div><br/>
+			<li><iframe width="100%" height="240" src="http://www.youtube.com/embed/muB4_LNZ2Rk"></iframe></li><br/>
+			<div class="ui-bar ui-bar-e">플래시몹(서울역광장) 동영상</div><br/>
+			<li><video controls width="100%" preload="metadata">
+				<source src="mop.mp4" type="video/mp4">
+			</video></li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+	<div data-role="page" id="types" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b" style="color: white ; background:brown">
+			<h1>드립커피의 종류</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-e">외교부 독도 소개 동영상</div><br/>
+			<li><iframe width="100%" height="240" src="http://www.youtube.com/embed/muB4_LNZ2Rk"></iframe></li><br/>
+			<div class="ui-bar ui-bar-e">플래시몹(서울역광장) 동영상</div><br/>
+			<li><video controls width="100%" preload="metadata">
+				<source src="mop.mp4" type="video/mp4">
+			</video></li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+</div>	
+</body>
+</html>
